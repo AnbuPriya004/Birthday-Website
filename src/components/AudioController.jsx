@@ -6,7 +6,7 @@ export default function AudioController({ active }) {
   const toggle=()=>{setMuted(x=>{localStorage.setItem('birthday-muted',String(!x));return !x})};
   return <><audio autoPlay>
   <source
-    src={`${import.meta.env.BASE_URL}audio/birthday.mp3`}
+    src={`${import.meta.env.BASE_URL}audio/audio.mp3`}
     type="audio/mpeg"
   />
 </audio><button className="sound" onClick={toggle} aria-label="Toggle sound">{muted?<VolumeX size={17}/>:<Volume2 size={17}/>}</button></>;
